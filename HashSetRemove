@@ -1,0 +1,21 @@
+import java.util.HashSet;
+
+public class HashSetRemove {
+    public static void main(String[] args) {
+        HashSet<String> colors = new HashSet<>();
+
+        colors.add("Red");
+        colors.add("Green");
+        colors.add("Blue");
+        colors.add("Yellow");
+
+        System.out.println("Before removing: " + colors);
+
+        colors.remove("Blue");
+
+        System.out.println("After removing Blue: " + colors);
+    }
+}
+OUTPUT:
+Before removing: [Red, Blue, Green, Yellow]
+After removing Blue: [Red, Green, Yellow]
